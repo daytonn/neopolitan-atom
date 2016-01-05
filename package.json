@@ -1,10 +1,10 @@
 {
-  "name": "atom-dark-ui",
+  "name": "neopolitan-ui",
   "theme": "ui",
-  "version": "0.51.1",
-  "description": "A dark UI theme for Atom",
-  "license": "MIT",
-  "repository": "https://github.com/atom/atom-dark-ui",
+  "version": "1.0.0",
+  "description": "A rich chocolatey theme for Atom",
+  "license": "Apache-2.0",
+  "repository": "https://github.com/daytonn/neopolitan-atom",
   "engines": {
     "atom": ">0.40.0"
   }

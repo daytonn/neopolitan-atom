@@ -1,78 +1,94 @@
 // Colors
+@brown: #271F19;
+@dark-brown: #171310;
+@dark-blue: #253b76;
+@hot-pink: #FF0080;
+@orange: #FF6400;
+@light-brown: #44352A;
+@yellow: #FBDE2D;
+@green: #61CE3C;
+@light-blue: #7F90AA;
+@white: #F8F8F8;
+@blue: #8DA6CE;
+@red: #800000;
+@black: #191919;
+@dark-grey: #333;
+@med-grey: #555;
+@half-opaque: rgba(0, 0, 0, 0.5);
 
-@text-color: #aaa;
-@text-color-subtle: #555;
-@text-color-highlight: #fff;
+@text-color: @white;
+@text-color-subtle: @med-grey;
+@text-color-highlight: @white;
 @text-color-selected: @text-color-highlight;
 
-@text-color-info: #5293d8;
-@text-color-success: #2BDA77;
-@text-color-warning: #ff982d;
-@text-color-error: #c00;
+@text-color-info: @blue;
+@text-color-success: @green;
+@text-color-warning: @yellow;
+@text-color-error: @red;
 
 @text-color-ignored: @text-color-subtle;
 @text-color-added: @text-color-success;
 @text-color-renamed: @text-color-info;
-@text-color-modified: @text-color-warning;
+@text-color-modified: @yellow;
 @text-color-removed: @text-color-error;
 
-@background-color-info: #0098ff;
-@background-color-success: #17ca65;
-@background-color-warning: #ffaa2c;
-@background-color-error: #c00;
-@background-color-highlight: rgba(255, 255, 255, 0.07);
-@background-color-selected: #4182C4;
+@background-color-info: @blue;
+@background-color-success: @green;
+@background-color-warning: @yellow;
+@background-color-error: @red;
+@background-color-highlight: @dark-blue;
+@background-color-selected: @dark-blue;
 
-@app-background-color: #333;
+@app-background-color: @dark-brown;
 
-@base-background-color: lighten(@tool-panel-background-color, 5%);
-@base-border-color: rgba(0, 0, 0, 0.5);
+@base-background-color: @tool-panel-background-color;
+@base-border-color: @half-opaque;
 
 @pane-item-background-color: @base-background-color;
-@pane-item-border-color: rgba(0, 0, 0, 0.5);
+@pane-item-border-color: @half-opaque;
 
-@input-background-color: #212224;
-@input-border-color: @base-border-color;
+@input-background-color: @black;
+@input-border-color: @black;
 
-@tool-panel-background-color: #1d1f21;
-@tool-panel-border-color: @base-border-color;
+@tool-panel-background-color: @brown;
+@tool-panel-border-color: @brown;
 
-@inset-panel-background-color: #161719;
+@inset-panel-background-color: @brown;
 @inset-panel-border-color: @base-border-color;
 
-@panel-heading-background-color: #43484d;
+@panel-heading-background-color: @dark-brown;
 @panel-heading-border-color: fadein(@base-border-color, 10%);
 
-@overlay-background-color: #202123;
-@overlay-border-color: @background-color-highlight;
+@overlay-background-color: @brown;
+@overlay-border-color: @dark-brown;
 
-@button-background-color: #43484d;
+@button-background-color: @light-brown;
 @button-background-color-hover: lighten(@button-background-color, 5%);
-@button-background-color-selected: #5c6064;
+@button-background-color-selected: @button-background-color-hover;
 @button-border-color: @base-border-color;
 
-@tab-bar-background-color: #222;
-@tab-bar-border-color: darken(@tab-background-color-active, 10%);
-@tab-background-color: #333;
-@tab-background-color-active: #222;
-@tab-border-color: #484848;
+@tab-bar-background-color: @dark-brown;
+@tab-bar-border-color: @dark-brown;
+@tab-background-color: @dark-brown;
+@tab-background-color-active: @brown;
+@tab-border-color: @brown;
 
-@tree-view-background-color: #303030;
+@tree-view-background-color: @dark-brown;
 @tree-view-border-color: @tool-panel-border-color;
 
-@scrollbar-background-color: #222425; // Needs to be opaque -> atom/atom/issues/4578
-@scrollbar-color: rgba(92, 92, 92, 0.5);
+@scrollbar-background-color: @brown; // Needs to be opaque -> atom/atom/issues/4578
+@scrollbar-color: rgba(39, 31, 16, 0.5);
 
-@ui-site-color-1: @background-color-success; // green
-@ui-site-color-2: @background-color-info; // blue
-@ui-site-color-3: @background-color-warning; // orange
-@ui-site-color-4: #db2ff4; // purple
-@ui-site-color-5: #f5e11d; // yellow
+@ui-site-color-1: @green;
+@ui-site-color-2: @blue;
+@ui-site-color-3: @yellow;
+@ui-site-color-4: @hot-pink;
+@ui-site-color-5: @orange;
 
 
 // Sizes
 
-@font-size: 11px;
+@font-size: 14px;
 @input-font-size: 14px;
 
 @disclosure-arrow-size: 12px;
@@ -83,9 +99,9 @@
 @component-line-height: 25px;
 @component-border-radius: 2px;
 
-@tab-height: 26px;
+@tab-height: 34px;
 
 
 // Other
 
-@font-family: 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+@font-family: 'Futura', 'Segoe UI', Ubuntu, Cantarell, sans-serif;

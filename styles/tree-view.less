@@ -5,8 +5,7 @@
   background: @tree-view-background-color;
 
   .selected:before {
-    background: #444;
-    box-shadow: inset -3px 0 0 rgba(0,0,0, .05);
+    background: @brown;
   }
 }
 
@@ -18,20 +17,12 @@
 
 .focusable-panel {
   opacity: 1;
-  box-shadow: inset -3px 0 0 rgba(0,0,0, .05);
 
   &:focus {
-    background: #282828;
+    background: @dark-brown;
 
     .selected:before {
-      background: @background-color-selected;
+      background: @brown;
     }
-  }
-}
-
-[data-show-on-right-side=true] {
-  .tree-view .selected:before,
-  .focusable-panel {
-    box-shadow: inset 3px 0 0 rgba(0,0,0, .05);
   }
 }
